@@ -15,8 +15,8 @@
                 <h1>Crystal Collectors!</h1>
             </div>
         </div>
-        <div class="row justify-content-center" id="instructionContent">
-            <div class="col-md-10 col-lg-6 col-sm-12 instructions">
+        <div class="row justify-content-center" id="instruction-row">
+            <div class="col-md-10 col-lg-8 col-sm-12 instructions text-center">
                 <p>Each game you will be given a random number called "Goal."</p>
                 <br>
                 <p>The four crystals found below each have a random number assigned to them every game. Click
@@ -29,6 +29,39 @@
                     be assigned new hidden values.</p>
                 <br>
                 <strong><p>Now go collect those crystals -- Good luck!</p></strong>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center" id="score-row">
+            <div class="col-lg-3 col-md-4 col-sm-5 green-box">
+                <h4 class="score-header">Goal Score</h4>
+                <strong><p class="score-text" id="goal-score"></p></strong>
+
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 tint-box">
+                <p id="win-lose"></p>
+                <strong><p>Win: <p id="win-count"></p></p></strong>
+                <strong><p>Loss: <p id="loss-count"></p></p></strong>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 purple-box">
+                    <h4 class="score-header">Player Score</h4>
+                    <strong><p class="score-text" id="player-score"></p></strong>
+            </div>
+        </div>
+        <div class="row justify-content-between text-center" id="gem-row">
+            <div class="col-lg-2 col-md-2 col-3">
+                <img src="assets/images/emerald.png" class="img-fluid img-shrink" id="emerald">
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-3">
+                    <img src="assets/images/citrine.png" class="img-fluid img-shrink" id="citrine">
+                </div>
+
+            <div class="col-lg-2 col-md-2 col-3">
+            <img src="assets/images/ruby.png" class="img-fluid img-shrink" id="ruby">
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-3">
+            <img src="assets/images/sapphire.png" class="img-fluid img-shrink" id="sapphire">
             </div>
         </div>
     </div>

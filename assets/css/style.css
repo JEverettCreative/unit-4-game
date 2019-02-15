@@ -1,3 +1,24 @@
 .instructions {
     border: 2px double #000;
 }
+
+.img-shrink {
+    max-height: 160px;
+}
+
+.score-header {
+    font-size: 2em;
+    text-decoration: 1px #000;
+}
+
+.green-box {
+    background-color: #8ED879;
+}
+
+.tint-box {
+    background-color: #BBFFA8;
+}
+
+.purple-box {
+    background-color: #D879C6;
+}
