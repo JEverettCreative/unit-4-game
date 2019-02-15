@@ -9,7 +9,7 @@ $(document).ready(function(){
     var sapphireNum;
     var winCounter = 0;
     var lossCounter = 0;
-    var playerScore;
+    var playerScore = 0;
 
     // Initialize game settings for first and resets
     // initalizeGame = function() {
@@ -24,15 +24,40 @@ $(document).ready(function(){
     // Generate random numbers for each Gem between 1-12
         // Assign numbers to variables that represent each gem's value
     createGemNumbers = function() {
-        emeraldNum = Math.floor(Math.random() * 13);
-        citrineNum = Math.floor(Math.random() * 13);
-        rubyNum = Math.floor(Math.random() * 13);
-        sapphireNum = Math.floor(Math.random() * 13);
-        
+        emeraldNum = Math.ceil(Math.random() * 12);
+        citrineNum = Math.ceil(Math.random() * 12);
+        rubyNum = Math.ceil(Math.random() * 12);
+        sapphireNum = Math.ceil(Math.random() * 12);  
+        console.log(emeraldNum);    
     }
 
     // Create on click function for each gem
         // Should add gem's value to User Score
+    gemClickFetch = function() {
+        $("#emerald").on("click", function(){
+            playerScore += emeraldNum;
+            $("#player-score").html(playerScore);
+            console.log(playerScore);
+        });
+
+        $("#citrine").on("click", function(){
+            playerScore += citrineNum;
+            $("#player-score").html(playerScore);
+            console.log(playerScore);
+        });
+
+        $("#ruby").on("click", function(){
+            playerScore += rubyNum;
+            $("#player-score").html(playerScore);
+            console.log(playerScore);
+        });
+
+        $("#sapphire").on("click", function(){
+            playerScore += sapphireNum;
+            $("#player-score").html(playerScore);
+            console.log(playerScore);
+        });
+    }
 
     // Win parameters function
         // If User Score === Goal Score, then 
@@ -50,4 +75,6 @@ $(document).ready(function(){
 
 
     createRandomGoal();
+    createGemNumbers();
+    gemClickFetch();
 });
