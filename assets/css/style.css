@@ -1,5 +1,33 @@
-.instructions {
-    border: 2px double #000;
+body {
+    /* Background pattern from Toptal Subtle Patterns */
+    /* background-image: url(../images/gplaypattern.png); */
+    background-color:#D9D9D9;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#title-box {
+    background-color: #F19F4D;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#intruction-row {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+#score-row {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .img-shrink {
@@ -8,17 +36,21 @@
 
 .score-header {
     font-size: 2em;
-    text-decoration: 1px #000;
 }
 
-.green-box {
-    background-color: #8ED879;
+.score-text {
+    font-size: 1.5rem;
+}
+
+.tangerine {
+    background-color: #F19F4D;
 }
 
 .tint-box {
-    background-color: #BBFFA8;
+    background-color: #F9FFFB;
 }
 
-.purple-box {
-    background-color: #D879C6;
+#gem-row {
+    padding-top: 1em;
+    background-color: #D9D9D9;
 }
