@@ -9,11 +9,27 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Elsie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
 </head>
 <body>
+    <audio id="click-sound">
+        <source src="assets/audio/gem_click.wav" type="audio/wav">
+            Your browser does not support the audio element.
+    </audio>
+
+    <audio id="victory-sound">
+        <source src="assets/audio/victory.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+    </audio>
+    
+    <audio id="lose-sound">
+        <source src="assets/audio/lose.wav" type="audio/wav">
+            Your browser does not support the audio element.
+    </audio>
+
     <div class="container">
         <div class="row justify-content-center" id="head-content">
-            <div class="col-lg-8 col-md-10 col-sm-12 text-center " id="title-box">
+            <div class="col-lg-8 col-md-10 col-sm-12 text-center border-black" id="title-box">
                     <h1>
                         <span><i class="far fa-gem fa-spin"></i></span>
                         Crystal Collectors!
@@ -23,40 +39,40 @@
             </div>
         </div>
         <div class="row justify-content-center" id="instruction-row">
-            <div class="col-md-10 col-lg-8 col-sm-12  text-center tint-box">
-                <p>Each game you will be given a random number called "Goal."</p>
+            <div class="col-md-10 col-lg-8 col-sm-12 instructions text-center border-black tint-box">
+                <p>Each game you will be given a random number called <strong>"Goal Score."</strong></p>
                 <br>
-                <p>The four crystals found below each have a random number assigned to them every game. Click
-                    them to add them to your Player Score.</p>
+                <p>The four Crystals found below each have a random number assigned to them every game. Click
+                    them to add them to your <strong>Player Score.</strong></p>
                 <br>
                 <p>If you match your Player Score to the Goal, you win! But if you exceed the Goal, you will 
                     lose that round.</p>
                 <br>
-                <p>After you either win or lose, a new Goal number will be generated, and the crystals will 
+                <p>After you either win or lose, a new Goal Score will be generated, and the crystals will 
                     be assigned new hidden values.</p>
                 <br>
                 <strong><p>Now go collect those crystals -- Good luck!</p></strong>
             </div>
         </div>
         <div class="row justify-content-center text-center" id="score-row">
-            <div class="col-lg-3 col-md-4 col-sm-5 tangerine ">
+            <div class="col-lg-3 col-md-4 col-sm-5 tangerine border-black">
                 <h4 class="score-header">Goal Score</h4>
                 <strong><p class="score-text" id="goal-score"></p></strong>
 
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 tint-box ">
+            <div class="col-lg-2 col-md-2 col-sm-2 horizontal-border tint-box">
                 <strong><p id="win-lose"></p></strong>
-                <strong><p id="win-count">Win: </p></strong>
-                <strong><p id="loss-count">Loss: </p></strong>
+                <strong><p class="text-left" id="win-count">Win: </p></strong>
+                <strong><p class="text-left" id="loss-count">Loss: </p></strong>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-5 tangerine ">
+            <div class="col-lg-3 col-md-4 col-sm-5 tangerine border-black">
                     <h4 class="score-header">Player Score</h4>
                     <strong><p class="score-text" id="player-score"></p></strong>
             </div>
         </div>
         <div class="row justify-content-around text-center">
             <div class="col-lg-8 col-md-10 col-sm-12">
-                <div class="row justify-content-around text-center" id="gem-row">
+                <div class="row justify-content-around text-center border-black" id="gem-row">
                     <div class="col-lg-2 col-md-2 col-3">
                         <img src="assets/images/emerald.png" class="img-fluid img-shrink" id="emerald">
                     </div>

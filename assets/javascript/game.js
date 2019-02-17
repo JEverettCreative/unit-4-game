@@ -10,6 +10,19 @@ $(document).ready(function(){
     var winCounter = 0;
     var lossCounter = 0;
     var playerScore = 0;
+    // var victoryMusic = $("#victory-sound"); Return to audio effects later
+    // var clickSound = document.getElementById("click-sound");
+
+    // Create audio play functions -- return to this later
+    // playVictory = function() {
+    //     $(victoryMusic).play().then();
+    // }
+
+    // playClick = function() {
+    //     var clickSound = document.getElementById("click-sound");
+    //     this = clickSound;
+    //     this.play();
+    // }
 
     // Initialize game settings for first and resets
     resetGame = function() {
@@ -41,6 +54,7 @@ $(document).ready(function(){
             playerScore += emeraldNum;
             $("#player-score").html(playerScore);
             console.log(playerScore);
+            // playClick(); For later
             winLoseCondition();
         });
 
@@ -48,6 +62,7 @@ $(document).ready(function(){
             playerScore += citrineNum;
             $("#player-score").html(playerScore);
             console.log(playerScore);
+            // playClick();
             winLoseCondition();
         });
 
@@ -55,6 +70,7 @@ $(document).ready(function(){
             playerScore += rubyNum;
             $("#player-score").html(playerScore);
             console.log(playerScore);
+            // playClick();
             winLoseCondition();
         });
 
@@ -62,6 +78,7 @@ $(document).ready(function(){
             playerScore += sapphireNum;
             $("#player-score").html(playerScore);
             console.log(playerScore);
+            // playClick();
             winLoseCondition();
         });
     }
@@ -72,6 +89,7 @@ $(document).ready(function(){
             winCounter += 1;
             $("#win-count").html("Win: " + winCounter);
             $("#win-lose").html("Victory!");
+            playVictory();
             resetGame();
         }
         else if (playerScore > goalScore) {

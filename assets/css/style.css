@@ -1,7 +1,5 @@
 body {
-    /* Background pattern from Toptal Subtle Patterns */
-    /* background-image: url(../images/gplaypattern.png); */
-    background-color:#D9D9D9;
+    background-color:#4484CE;
 }
 
 h1 {
@@ -25,26 +23,40 @@ h4 {
    
 }
 
+.border-black {
+    border: 3px solid #000;
+}
+
+.horizontal-border {
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
 #title-box {
     background-color: #F19F4D;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.5rem;
+    font-family: 'Mukta', sans-serif;
 }
 
 #intruction-row {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.instructions {
+    padding: 1rem;
 }
 
 #score-row {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .img-shrink {
@@ -53,10 +65,21 @@ p {
 
 .score-header {
     font-size: 2em;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       1px 1px 0 #4484CE,
+     -1px -1px 0 #4484CE,  
+      1px -1px 0 #4484CE,
+      -1px 1px 0 #4484CE,
+       1px 1px 0 #4484CE;
 }
 
 .score-text {
     font-size: 1.5rem;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .tangerine {
@@ -64,12 +87,12 @@ p {
 }
 
 .tint-box {
-    background-color: #F9FFFB;
+    background-color: #F5F5F5;
 }
 
 #gem-row {
-    padding-top: 1em;
-    background-color: #D9D9D9;
+    padding-top: 0.5em;
+    background-color: #F5F5F5;
 }
 
 /* Code specific to font-awesome assets */
