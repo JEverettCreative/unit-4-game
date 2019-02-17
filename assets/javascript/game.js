@@ -53,7 +53,6 @@ $(document).ready(function(){
         $("#emerald").on("click", function(){
             playerScore += emeraldNum;
             $("#player-score").html(playerScore);
-            console.log(playerScore);
             // playClick(); For later
             winLoseCondition();
         });
@@ -61,7 +60,6 @@ $(document).ready(function(){
         $("#citrine").on("click", function(){
             playerScore += citrineNum;
             $("#player-score").html(playerScore);
-            console.log(playerScore);
             // playClick();
             winLoseCondition();
         });
@@ -69,7 +67,6 @@ $(document).ready(function(){
         $("#ruby").on("click", function(){
             playerScore += rubyNum;
             $("#player-score").html(playerScore);
-            console.log(playerScore);
             // playClick();
             winLoseCondition();
         });
@@ -77,7 +74,6 @@ $(document).ready(function(){
         $("#sapphire").on("click", function(){
             playerScore += sapphireNum;
             $("#player-score").html(playerScore);
-            console.log(playerScore);
             // playClick();
             winLoseCondition();
         });
@@ -98,15 +94,7 @@ $(document).ready(function(){
             $("#win-lose").html("Round lost!");
             resetGame();
         }
-    }
-
-    // Lose parameters function
-        // If User Score > Goal Score, then 
-            // Lose counter goes up by 1
-            // Add text within Win/Loss box that says "You lost!"
-            // Reset function runs to establish new values
-
-
+    }  
 
 
     createRandomGoal();
