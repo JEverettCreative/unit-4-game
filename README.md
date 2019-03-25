@@ -8,10 +8,13 @@
 * jQuery, JavaScript, HTML5, CSS3, and Bootstrap
 
 ## About
-* An intuitive mathematical game that requires players to use four crystals with randomized hidden values to try to add up to a random Goal Score. Matching the number exactly is a Win. Exceeding the number results in a Loss. 
+* An intuitive mathematical game that requires players to use four crystals with randomized hidden values to try to add up to a random Goal Score. Matching the number exactly is a Win. Exceeding the number results in a Loss.
+
+## Deployed Project
+https://jeverettcreative.github.io/unit-4-game/
 
 ## How-to use this code
-* Simply pull the files and open them in your web browser of choice to view.
+* Simply pull the files and open them in your web browser of choice to view, or view the deployed link above.
 
 ## Contributing Guidelines
 All contributions and suggestions are welcome!
